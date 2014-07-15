@@ -1,0 +1,278 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,600italic);
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  color: #373A41;
+  font: 400 16px/1.45 "Source Sans Pro", Helvetica, Calibri, Arial, sans-serif;
+  margin: 0;
+  padding: 60px 0 0;
+}
+
+section,
+header,
+figure,
+footer { 
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link {
+  color: #55A3CA;
+  text-decoration: none;
+}
+a:visited {
+  color:#6824E5;
+}
+a:hover {
+  color:#E53724 /* #E7A024*/;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 22px 0 8px;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+h4 {
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1px 3px;
+  text-transform: uppercase;
+}
+h4.roads {
+   background: rgba(0, 116, 217, 1);
+}
+h4.bridges {
+  background: rgba(255, 65, 54, 1);
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 13px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 50px 0;
+  width: 100px;
+}
+
+#map {
+  background-color: #dddddd;
+  height: 300px;
+  margin: 20px 20px 0 20px;
+  position: relative;
+  max-width: 100%;
+}
+@media (min-width: 321px) {
+  #map {
+    height: 500px;
+    margin: 0;
+  }
+}
+.legend {
+  padding: 10px;
+  position: relative;
+  margin: 10px auto 40px;
+  top: 50px;
+  max-width: 180px;
+}
+@media (min-width: 321px) {
+  .legend {
+    float: right;
+    margin: 0 0 10px 40px;
+    max-width: 300px;
+  }
+}
+@media (min-width: 1025px) {
+  .legend {
+    background: #fff;
+    border-radius: 2px;
+    float: none;
+    margin: 0;
+    padding: 25px;
+    position: absolute;
+    right: 50px;
+    top: 300px;
+    max-width: 300px;
+  }
+}
+.container {
+  background: #fff;
+  padding: 20px;
+}
+@media (min-width: 769px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+}
+.content-map {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin: 40px auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.map {
+  height: 500px;
+  width: 100%;
+}
+
+
+header {
+  z-index:9999;
+  background: #ffffff;
+  border-bottom: 3px solid #001f3f;
+  min-height: 60px;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+#logo {
+  font-weight: 700;
+  left: 10px;
+  margin: 0;
+  position: fixed;
+  top: 20px;
+}
+header nav {
+  display:none;
+  margin-left: 75px;
+  margin-top: 18px;
+}
+@media (min-width: 321px) {
+  header nav {
+    display: block;
+  }
+}
+header nav a:link {
+  color: #373A41;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 6px;
+}
+header nav a:visited {
+  color: #373A41;
+}
+header nav a:hover {
+  background-color: #ffffff;
+  color: #777;
+  text-decoration: none;
+}
+header form {
+  float: right;
+  margin: 18px 10px 0 0;
+}
+header form input {
+  border: 1px solid #999;
+  border-radius: 2px;
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  padding: 1px 3px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0;
+}
+.table {
+  font-size: 11px;
+  margin: 0 0 20px 0;
+}
+.table span {
+  display: block;
+  height: 20px;
+  margin: 0 auto;
+  width: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  color: #212326;
+  padding: 5px;
+  line-height: 1.428571429;
+  vertical-align: middle;
+  border-top: 1px solid #dddddd;
+}
+.table > tbody > tr:first-child > td,
+.table > tbody > tr:first-child > th {
+  border-top: none;
+}
+.table > tbody > tr > th,
+.table > tfoot > tr > th {
+  text-align: left;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.table > thead:last-child > tr > th {
+  vertical-align: bottom;
+  border-bottom: none;
+  border-top: 2px solid #dddddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}

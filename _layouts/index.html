@@ -1,0 +1,59 @@
+{%include header.html %}
+
+<div class="container">
+  <div class="content">
+    <h3>Your state's roads and bridges — and what's at risk</h3>
+    <p>If Congress fails to reauthorize funding to repair our crumbling infrastructure by September 30, it will have very real consequences for all 50 states — jeopardizing hundreds of thousands of jobs, and slowing or stopping more than 100,000 active highway and transit projects.</p>
+  </div>
+  <div class="content content-map">
+    <h4 class="roads">Roads</h4>
+    <div id="roads" class="map"></div>
+    <table class="table legend">
+      <tbody>
+        <tr>
+          <td><span style="display: block; background: rgba(0, 116, 217, 1);width: 20px; height: 20px;"></span></td>
+          <td>Less than 20%</td>
+        </tr>
+        <tr>
+          <td><span style="display: block; background: rgba(0, 116, 217, .75);width: 20px; height: 20px;"></span></td>
+          <td>20% - 25%</td>
+        </tr>
+        <tr>
+          <td><span style="display: block; background: rgba(0, 116, 217, .5);width: 20px; height: 20px;"></span></td>
+          <td>26% - 32%</td>
+        </tr>
+        <tr>
+          <td><span style="display: block; background: rgba(0, 116, 217, .25);width: 20px; height: 20px;"></span></td>
+          <td>More than 32%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content content-map">
+    <h4 class="bridges">Bridges</h4>
+    <div id="bridges" class="map"></div>
+    <table class="table legend">
+      <tbody>
+        <tr>
+          <td><span style="display: block; background: rgba(255, 65, 54, 1);width: 20px; height: 20px;"></span></td>
+          <td>Less than 20%</td>
+        </tr>
+        <tr>
+          <td><span style="display: block; background: rgba(255, 65, 54, .75);width: 20px; height: 20px;"></span></td>
+          <td>20% - 25%</td>
+        </tr>
+        <tr>
+          <td><span style="display: block; background: rgba(255, 65, 54, .5);width: 20px; height: 20px;"></span></td>
+          <td>26% - 32%</td>
+        </tr>
+        <tr>
+          <td><span style="display: block; background: rgba(255, 65, 54, .25);width: 20px; height: 20px;"></span></td>
+          <td>More than 32%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+       
+{%include footer.html %}
