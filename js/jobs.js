@@ -11,7 +11,7 @@ var roads = new Map({
         highlightBorderColor: '#111',
         highlightBorderWidth: '1',
         highlightOnHover: true,
-        popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/> has <strong><%= data.milesPublicRoad %> miles</strong> of public roads.<br /><strong><%= data.percentRoadsPoorCondition %>%</strong> are in poor condition.')
+        popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/> can potentially lose and estimated <strong><%= data.estAnnualJobRisk %> jobs</strong>.')
     },
 
     fills: {
