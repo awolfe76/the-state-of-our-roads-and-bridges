@@ -1,7 +1,7 @@
 /* Backbone style execution */
-var roads = new Map({
+var projects = new Map({
     scope: 'usa',
-    el: $('#roads'),
+    el: $('#projects'),
     done: function(roads) {
         roads.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
             alert('hi');
@@ -11,20 +11,20 @@ var roads = new Map({
         highlightBorderColor: '#111',
         highlightBorderWidth: '1',
         highlightOnHover: true,
-        popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.milesPublicRoad %></strong> miles of roads<br /><strong><%= data.percentRoadsPoorCondition %>%</strong> in poor condition')
+        popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.activeHighwayProjects %></strong> projects')
     },
 
     fills: {
-        'BEST': 'rgba(0, 116, 217, .25)',
-        'BETTER': 'rgba(0, 116, 217, .5)',
-        'WORSE': 'rgba(0, 116, 217, .75)',
-        'WORST': 'rgba(0, 116, 217, 1)',
+        'BEST': 'rgba(255, 133, 27, .25)',
+        'BETTER': 'rgba(255, 133, 27, .5)',
+        'WORSE': 'rgba(255, 133, 27, .75)',
+        'WORST': 'rgba(255, 133, 27, 1)',
         defaultFill: '#dddddd'
     },
       data: {
       "AL": {
         "milesPublicRoad":101688,
-        "fillKey": "WORSE",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":19,
         "highwayTrafficFatalities":894,
         "bridges":16078,
@@ -54,7 +54,7 @@ var roads = new Map({
       },
       "AR": {
         "milesPublicRoad":100082,
-        "fillKey": "WORSE",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":14,
         "highwayTrafficFatalities":549,
         "bridges":12748,
@@ -99,7 +99,7 @@ var roads = new Map({
       },
       "CO": {
         "milesPublicRoad":88414,
-        "fillKey": "WORSE",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":17,
         "highwayTrafficFatalities":447,
         "bridges":8612,
@@ -114,7 +114,7 @@ var roads = new Map({
       },
       "CT": {
         "milesPublicRoad":21414,
-        "fillKey": "WORST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":41,
         "highwayTrafficFatalities":220,
         "bridges":4218,
@@ -129,7 +129,7 @@ var roads = new Map({
       },
       "DE": {
         "milesPublicRoad":6357,
-        "fillKey": "WORSE",
+        "fillKey": "BEST",
         "percentRoadsPoorCondition":16,
         "highwayTrafficFatalities":99,
         "bridges":864,
@@ -144,7 +144,7 @@ var roads = new Map({
       },
       "FL": {
         "milesPublicRoad":121759,
-        "fillKey": "BEST",
+        "fillKey": "WORSE",
         "percentRoadsPoorCondition":4,
         "highwayTrafficFatalities":2398,
         "bridges":12070,
@@ -159,7 +159,7 @@ var roads = new Map({
       },
       "GA": {
         "milesPublicRoad":123546,
-        "fillKey": "BEST",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":5,
         "highwayTrafficFatalities":1223,
         "bridges":14769,
@@ -174,7 +174,7 @@ var roads = new Map({
       },
       "HI": {
         "milesPublicRoad":4405,
-        "fillKey": "WORST",
+        "fillKey": "BEST",
         "percentRoadsPoorCondition":27,
         "highwayTrafficFatalities":100,
         "bridges":1125,
@@ -219,7 +219,7 @@ var roads = new Map({
       },
       "IL": {
         "milesPublicRoad":139498,
-        "fillKey": "WORSE",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":15,
         "highwayTrafficFatalities":918,
         "bridges":26621,
@@ -234,7 +234,7 @@ var roads = new Map({
       },
       "IN": {
         "milesPublicRoad":97065,
-        "fillKey": "WORSE",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":16,
         "highwayTrafficFatalities":750,
         "bridges":18953,
@@ -249,7 +249,7 @@ var roads = new Map({
       },
       "KS": {
         "milesPublicRoad":140513,
-        "fillKey": "BETTER",
+        "fillKey": "BEST",
         "percentRoadsPoorCondition":8,
         "highwayTrafficFatalities":386,
         "bridges":25171,
@@ -294,7 +294,7 @@ var roads = new Map({
       },
       "MA": {
         "milesPublicRoad":36302,
-        "fillKey": "WORSE",
+        "fillKey": "BEST",
         "percentRoadsPoorCondition":19,
         "highwayTrafficFatalities":337,
         "bridges":5136,
@@ -309,7 +309,7 @@ var roads = new Map({
       },
       "MD": {
         "milesPublicRoad":32321,
-        "fillKey": "BEST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":2,
         "highwayTrafficFatalities":485,
         "bridges":5291,
@@ -369,7 +369,7 @@ var roads = new Map({
       },
       "MO": {
         "milesPublicRoad":131667,
-        "fillKey": "BEST",
+        "fillKey": "WORSE",
         "percentRoadsPoorCondition":1,
         "highwayTrafficFatalities":784,
         "bridges":24350,
@@ -399,7 +399,7 @@ var roads = new Map({
       },
       "MT": {
         "milesPublicRoad":74880,
-        "fillKey": "BEST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":5,
         "highwayTrafficFatalities":209,
         "bridges":5126,
@@ -414,7 +414,7 @@ var roads = new Map({
       },
       "NC": {
         "milesPublicRoad":105869,
-        "fillKey": "BETTER",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":11,
         "highwayTrafficFatalities":1227,
         "bridges":18168,
@@ -429,7 +429,7 @@ var roads = new Map({
       },
       "ND": {
         "milesPublicRoad":86851,
-        "fillKey": "BEST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":4,
         "highwayTrafficFatalities":148,
         "bridges":4439,
@@ -459,7 +459,7 @@ var roads = new Map({
       },
       "NH": {
         "milesPublicRoad":16076,
-        "fillKey": "WORSE",
+        "fillKey": "BEST",
         "percentRoadsPoorCondition":17,
         "highwayTrafficFatalities":90,
         "bridges":2438,
@@ -474,7 +474,7 @@ var roads = new Map({
       },
       "NJ": {
         "milesPublicRoad":39213,
-        "fillKey": "WORST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":35,
         "highwayTrafficFatalities":627,
         "bridges":6566,
@@ -534,7 +534,7 @@ var roads = new Map({
       },
       "OH": {
         "milesPublicRoad":123247,
-        "fillKey": "WORSE",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":15,
         "highwayTrafficFatalities":1016,
         "bridges":27015,
@@ -564,7 +564,7 @@ var roads = new Map({
       },
       "OR": {
         "milesPublicRoad":59148,
-        "fillKey": "BEST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":6,
         "highwayTrafficFatalities":331,
         "bridges":7656,
@@ -579,7 +579,7 @@ var roads = new Map({
       },
       "PA": {
         "milesPublicRoad":119771,
-        "fillKey": "WORSE",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":15,
         "highwayTrafficFatalities":1286,
         "bridges":22660,
@@ -594,7 +594,7 @@ var roads = new Map({
       },
       "RI": {
         "milesPublicRoad":6484,
-        "fillKey": "WORST",
+        "fillKey": "BEST",
         "percentRoadsPoorCondition":41,
         "highwayTrafficFatalities":66,
         "bridges":766,
@@ -609,7 +609,7 @@ var roads = new Map({
       },
       "SC": {
         "milesPublicRoad":65997,
-        "fillKey": "BEST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":5,
         "highwayTrafficFatalities":828,
         "bridges":9275,
@@ -624,7 +624,7 @@ var roads = new Map({
       },
       "SD": {
         "milesPublicRoad":82459,
-        "fillKey": "BEST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":6,
         "highwayTrafficFatalities":111,
         "bridges":5875,
@@ -639,7 +639,7 @@ var roads = new Map({
       },
       "TN": {
         "milesPublicRoad":95492,
-        "fillKey": "BEST",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":6,
         "highwayTrafficFatalities":946,
         "bridges":20058,
@@ -654,7 +654,7 @@ var roads = new Map({
       },
       "TX": {
         "milesPublicRoad":312911,
-        "fillKey": "BETTER",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":8,
         "highwayTrafficFatalities":3016,
         "bridges":52561,
@@ -684,7 +684,7 @@ var roads = new Map({
       },
       "VA": {
         "milesPublicRoad":74461,
-        "fillKey": "BEST",
+        "fillKey": "WORST",
         "percentRoadsPoorCondition":6,
         "highwayTrafficFatalities":764,
         "bridges":13765,
@@ -699,7 +699,7 @@ var roads = new Map({
       },
       "VT": {
         "milesPublicRoad":14290,
-        "fillKey": "WORSE",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":14,
         "highwayTrafficFatalities":55,
         "bridges":2731,
@@ -714,7 +714,7 @@ var roads = new Map({
       },
       "WA": {
         "milesPublicRoad":83743,
-        "fillKey": "WORST",
+        "fillKey": "BETTER",
         "percentRoadsPoorCondition":22,
         "highwayTrafficFatalities":457,
         "bridges":7902,
@@ -775,4 +775,4 @@ var roads = new Map({
     }
 });
 
-roads.render();
+projects.render();

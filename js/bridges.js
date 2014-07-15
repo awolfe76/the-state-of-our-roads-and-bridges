@@ -6,7 +6,7 @@ var bridges = new Map({
         highlightBorderColor: '#111',
         highlightBorderWidth: '1',
         highlightOnHover: true,
-        popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/> has <strong><%= data.bridges %> bridges</strong>.<br /><strong><%= data.percentDeficientObsoleteBridges %>%</strong> are in poor condition.')
+        popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.bridges %></strong> bridges<br /><strong><%= data.percentDeficientObsoleteBridges %>%</strong> in poor condition')
     },
 
     fills: {

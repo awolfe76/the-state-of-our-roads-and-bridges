@@ -1,5 +1,5 @@
 /* Backbone style execution */
-var roads = new Map({
+var jobs = new Map({
     scope: 'usa',
     el: $('#jobs'),
     done: function(roads) {
@@ -11,7 +11,7 @@ var roads = new Map({
         highlightBorderColor: '#111',
         highlightBorderWidth: '1',
         highlightOnHover: true,
-        popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/> can potentially lose and estimated <strong><%= data.estAnnualJobRisk %> jobs</strong>.')
+        popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.estAnnualJobRisk %></strong> jobs')
     },
 
     fills: {
@@ -775,4 +775,4 @@ var roads = new Map({
     }
 });
 
-roads.render();
+jobs.render();

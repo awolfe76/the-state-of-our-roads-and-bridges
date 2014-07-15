@@ -85,6 +85,9 @@ h4 {
 h4.jobs {
   background: rgba(46, 204, 64, 1);
 }
+h4.projects {
+  background: rgba(255, 133, 27, 1);
+}
 h4.roads {
   background: rgba(0, 116, 217, 1);
 }
@@ -194,31 +197,31 @@ header h3 {
   }
 }
 
-.map {
+.map-container {
   border-bottom: 1px dotted #ddd;
   margin: 20px 0;
   padding: 20px 0;
 }
 @media (min-width: 601px) {
-  .map {
+  .map-container {
     border-bottom: 1px dotted #ddd;
     margin: 50px 0;
     padding: 50px 0;
   }
 }
 
-#jobs, #roads, #bridges {
+.map {
   height: 200px;
   width: 100%;
 }
 @media (min-width: 400px) {
-  #jobs, #roads, #bridges {
+  .map {
     height: 300px;
     width: 100%;
   }
 }
 @media (min-width: 601px) {
-  #jobs, #roads, #bridges {
+  .map {
     height: 500px;
     width: 100%;
   }

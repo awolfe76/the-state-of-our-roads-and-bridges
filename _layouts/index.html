@@ -10,9 +10,9 @@
 
 <div class="container">
   <div class="row">
-    <div class="map">
+    <div class="map-container">
       <h4 class="jobs">Esimtated Jobs at Risk</h4>
-      <div id="jobs"></div>
+      <div class="map" id="jobs"></div>
       <table class="table legend">
         <caption>California can potentially lose an estimated 73,572 jobs.</caption>
         <tbody>
@@ -37,10 +37,39 @@
     </div>
   </div>
 
+  <div class="container">
   <div class="row">
-    <div class="map">
+    <div class="map-container">
+      <h4 class="projects">Acitve Highway Projects</h4>
+      <div class="map" id="projects"></div>
+      <table class="table legend">
+        <caption>Virginia has 6595 active highway projects.</caption>
+        <tbody>
+          <tr>
+            <td><span style="display: block; background: rgba(255, 133, 27, .25);width: 20px; height: 20px;"></span></td>
+            <td>Less than 1,000</td>
+          </tr>
+          <tr>
+            <td><span style="display: block; background: rgba(255, 133, 27, .5);width: 20px; height: 20px;"></span></td>
+            <td>1,000 - 2,000</td>
+          </tr>
+          <tr>
+            <td><span style="display: block; background: rgba(255, 133, 27, .75);width: 20px; height: 20px;"></span></td>
+            <td>2,000 - 3,000</td>
+          </tr>
+          <tr>
+            <td><span style="display: block; background: rgba(255, 133, 27, 1);width: 20px; height: 20px;"></span></td>
+            <td>More than 3,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="map-container">
       <h4 class="roads">Roads in Poor Condition</h4>
-      <div id="roads"></div>
+      <div class="map" id="roads"></div>
       <table class="table legend">
         <caption>Both Connecticut and Rhode Island have 41% of roads listed in poor condition.</caption>
         <tbody>
@@ -66,9 +95,9 @@
   </div>
 
   <div class="row">
-    <div class="map">
+    <div class="map-container">
       <h4 class="bridges">Deficient or Obsolete Bridges</h4>
-      <div id="bridges"></div>
+      <div class="map" id="bridges"></div>
       <table class="table legend">
         <caption>Rhode Island has 57% of bridges listed as deficient or obsolete.</caption>
         <tbody>
