@@ -42,7 +42,7 @@ a:hover {
 }
 
 p {
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 p.note {
@@ -81,6 +81,9 @@ h4 {
   font-weight: 700;
   padding: 1px 3px;
   text-transform: uppercase;
+}
+h4.jobs {
+  background: rgba(46, 204, 64, 1);
 }
 h4.roads {
   background: rgba(0, 116, 217, 1);
@@ -133,17 +136,13 @@ hr {
   background: #fff;
   padding: 20px;
 }
-@media (min-width: 769px) {
-  .container {
-    padding: 0;
-  }
-}
 
 .content {
   margin: 50px auto;
   position: relative;
+  text-align: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
 }
 .content-map {
   border: 1px solid #ddd;
@@ -173,15 +172,15 @@ header hgroup {
 }
 header h1 {
   color: #111;
-  font-size: 60px;
+  font-size: 72px;
   font-weight: 900;
   margin-top: 0;
 }
 header h1 span {
-  color: #ccc;
+  color: #ddd;
   display: block;
   font-family: "Lora";
-  font-size: 24px;
+  font-size: 28px;
   font-style: italic;
   text-transform: capitalize;
   font-weight: 700;
