@@ -15,10 +15,10 @@ var roads = new Map({
     },
 
     fills: {
-        'BEST': 'rgba(0, 116, 217, 1)',
-        'BETTER': 'rgba(0, 116, 217, .75)',
-        'WORSE': 'rgba(0, 116, 217, .5)',
-        'WORST': 'rgba(0, 116, 217, .25)',
+        'BEST': 'rgba(0, 116, 217, .25)',
+        'BETTER': 'rgba(0, 116, 217, .5)',
+        'WORSE': 'rgba(0, 116, 217, .75)',
+        'WORST': 'rgba(0, 116, 217, 1)',
         defaultFill: '#dddddd'
     },
       data: {

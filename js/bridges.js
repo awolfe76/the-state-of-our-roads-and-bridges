@@ -10,10 +10,10 @@ var bridges = new Map({
     },
 
     fills: {
-        'BEST': 'rgba(255, 65, 54, 1)',
-        'BETTER': 'rgba(255, 65, 54, .75)',
-        'WORSE': 'rgba(255, 65, 54, .5)',
-        'WORST': 'rgba(255, 65, 54, .25)',
+        'BEST': 'rgba(255, 65, 54, .25)',
+        'BETTER': 'rgba(255, 65, 54, .5)',
+        'WORSE': 'rgba(255, 65, 54, .75)',
+        'WORST': 'rgba(255, 65, 54, 1)',
         defaultFill: '#dddddd'
     },
       data: {
