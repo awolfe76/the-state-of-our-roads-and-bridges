@@ -137,7 +137,7 @@ header h1 {
   margin: 0;
 }
 header h1 span {
-  color: #ddd;
+  color: #fff;
   display: block;
   font-family: "Lora";
   font-size: 12px;
@@ -146,13 +146,19 @@ header h1 span {
   font-weight: 700;
 }
 header h3 {
-  color: #ffdc00;
+  color: #fff;
   font-family: "Lora";
   font-size: 12px;
   font-style: italic;
-  margin-top: 20px;
+  margin-top: 40px;
   text-transform: capitalize;
   font-weight: 700;
+}
+header h3 span {
+  background: #ff4136;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 0 4px;
 }
 @media (min-width: 481px){
   header h1 {
