@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,600italic);
+@import url(http://fonts.googleapis.com/css?family=Lora:700italic|Source+Sans+Pro:400,400italic,900,600,700);
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   color: #373A41;
   font: 400 16px/1.45 "Source Sans Pro", Helvetica, Calibri, Arial, sans-serif;
   margin: 0;
-  padding: 60px 0 0;
+  padding: 0;
 }
 
 section,
@@ -42,7 +42,14 @@ a:hover {
 }
 
 p {
+  font-size: 18px;
   margin-bottom: 20px;
+}
+p.note {
+  color: #555;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 0;
 }
 
 h1,
@@ -57,6 +64,7 @@ h6 {
 }
 h1 {
   font-size: 36px;
+  font-weight: 700;
 }
 h2 {
   font-size: 30px;
@@ -75,7 +83,7 @@ h4 {
   text-transform: uppercase;
 }
 h4.roads {
-   background: rgba(0, 116, 217, 1);
+  background: rgba(0, 116, 217, 1);
 }
 h4.bridges {
   background: rgba(255, 65, 54, 1);
@@ -93,19 +101,6 @@ hr {
   width: 100px;
 }
 
-#map {
-  background-color: #dddddd;
-  height: 300px;
-  margin: 20px 20px 0 20px;
-  position: relative;
-  max-width: 100%;
-}
-@media (min-width: 321px) {
-  #map {
-    height: 500px;
-    margin: 0;
-  }
-}
 .legend {
   padding: 10px;
   position: relative;
@@ -113,6 +108,7 @@ hr {
   top: 50px;
   max-width: 180px;
 }
+
 @media (min-width: 321px) {
   .legend {
     float: right;
@@ -144,80 +140,61 @@ hr {
 }
 
 .content {
-  margin: 0 auto;
+  margin: 50px auto;
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 600px;
 }
 .content-map {
   border: 1px solid #ddd;
   border-radius: 2px;
-  margin: 40px auto;
   padding: 50px;
   text-align: center;
+  max-width: 1200px;
 }
 
 .map {
   height: 500px;
   width: 100%;
+  max-width: 100%;
 }
 
 
 header {
-  z-index:9999;
-  background: #ffffff;
+  background: #ffffff url('/the-state-of-our-roads-and-bridges/img/bridge.jpg') 50% 50%;
   border-bottom: 3px solid #001f3f;
-  min-height: 60px;
-  position: fixed;
+  min-height: 700px;
   text-transform: uppercase;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
 }
-#logo {
+header hgroup {
+  padding-top: 125px;
+  text-align: center;
+}
+header h1 {
+  color: #111;
+  font-size: 60px;
+  font-weight: 900;
+  margin-top: 0;
+}
+header h1 span {
+  color: #ccc;
+  display: block;
+  font-family: "Lora";
+  font-size: 24px;
+  font-style: italic;
+  text-transform: capitalize;
   font-weight: 700;
-  left: 10px;
-  margin: 0;
-  position: fixed;
-  top: 20px;
 }
-header nav {
-  display:none;
-  margin-left: 75px;
-  margin-top: 18px;
+header h3 {
+  color: #fff;
+  font-family: "Lora";
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 50px;
+  text-transform: capitalize;
+  font-weight: 700;
 }
-@media (min-width: 321px) {
-  header nav {
-    display: block;
-  }
-}
-header nav a:link {
-  color: #373A41;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 3px 6px;
-}
-header nav a:visited {
-  color: #373A41;
-}
-header nav a:hover {
-  background-color: #ffffff;
-  color: #777;
-  text-decoration: none;
-}
-header form {
-  float: right;
-  margin: 18px 10px 0 0;
-}
-header form input {
-  border: 1px solid #999;
-  border-radius: 2px;
-  font-family: 'Source Sans Pro';
-  font-size: 14px;
-  padding: 1px 3px;
-}
-
 table {
   border-spacing: 0;
   border-collapse: collapse;
