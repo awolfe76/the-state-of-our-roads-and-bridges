@@ -72,25 +72,12 @@ h3 {
 }
 h4 {
   border-radius: 2px;
-  color: #fff;
   display: inline-block;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   padding: 1px 3px;
   text-transform: uppercase;
-}
-h4.jobs {
-  background: rgba(46, 204, 64, 1);
-}
-h4.projects {
-  background: rgba(255, 133, 27, 1);
-}
-h4.roads {
-  background: rgba(0, 116, 217, 1);
-}
-h4.bridges {
-  background: rgba(255, 65, 54, 1);
 }
 h5 {
   font-size: 16px;
@@ -107,7 +94,7 @@ hr {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 850px;
 }
 .row {
   padding: 0 10px;
@@ -116,7 +103,7 @@ hr {
 }
 
 header {
-  background: #ffffff url('/the-state-of-our-roads-and-bridges/img/bridge.jpg') 5% 65%;
+  background: #ffffff url('/img/bridge.jpg') 5% 65%;
   min-height: 300px;
   overflow: hidden;
   text-align: center;
@@ -191,7 +178,7 @@ header h3 span {
   padding: 20px 0;
 }
 .intro p {
-  font-size: 24px;
+  font-size: 16px;
   margin: 0;
 }
 @media (min-width: 601px) {
@@ -200,6 +187,9 @@ header h3 span {
     padding-bottom: 50px;
     padding-top: 50px;
   }
+  .intro p {
+    font-size: 24px;
+  }
 }
 
 .map-container {
@@ -207,7 +197,7 @@ header h3 span {
   margin: 20px 0;
   padding: 20px 0;
 }
-@media (min-width: 601px) {
+@media (min-width: 769px) {
   .map-container {
     margin: 50px 0;
     padding: 50px 0;
@@ -216,15 +206,22 @@ header h3 span {
 
 .map {
   height: 200px;
+  margin: 0 auto;
 }
 @media (min-width: 400px) {
   .map {
-    height: 300px;
+    height: 400px;
   }
 }
-@media (min-width: 601px) {
+@media (min-width: 769px) {
   .map {
-    height: 500px;
+    margin: 0;
+    width: 600px;
+  }
+}
+@media (min-width: 1025px) {
+  .map {
+    height: 400px;
   }
 }
 
@@ -232,7 +229,7 @@ header h3 span {
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  width: 200px;
+  width: 250px;
 }
 caption {
   font-size: 14px;
@@ -242,11 +239,10 @@ caption {
 }
 @media (min-width: 1100px) {
   .legend {
-    left: 700px;
+    left: 600px;
     margin: 0;
     position: absolute;
-    top: 300px;
-    width: 180px;
+    top: 100px;
   }
   caption {
     font-size: 16px;
@@ -264,6 +260,7 @@ th {
 }
 .table {
   font-size: 11px;
+  width: 100%;
 }
 .table span {
   display: block;
@@ -282,6 +279,7 @@ th {
   line-height: 1.428571429;
   vertical-align: middle;
   border-top: 1px solid #dddddd;
+  text-align: left;
 }
 .table > tbody > tr:first-child > td,
 .table > tbody > tr:first-child > th {
