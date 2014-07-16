@@ -1,15 +1,10 @@
-/* Backbone style execution */
 var jobs = new Map({
     scope: 'usa',
     el: $('#jobs'),
-    done: function(roads) {
-        roads.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
-            alert('hi');
-        });
-    },
     geography_config: { 
-        highlightBorderColor: '#111',
+        highlightBorderColor: '#ddd',
         highlightBorderWidth: '1',
+        highlightFillColor: '#fff',
         highlightOnHover: true,
         popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.estAnnualJobRisk %></strong> jobs')
     },

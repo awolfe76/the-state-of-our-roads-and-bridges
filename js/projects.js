@@ -1,15 +1,10 @@
-/* Backbone style execution */
 var projects = new Map({
     scope: 'usa',
     el: $('#projects'),
-    done: function(roads) {
-        roads.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
-            alert('hi');
-        });
-    },
     geography_config: { 
-        highlightBorderColor: '#111',
+        highlightBorderColor: '#ddd',
         highlightBorderWidth: '1',
+        highlightFillColor: '#fff',
         highlightOnHover: true,
         popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.activeHighwayProjects %></strong> projects')
     },

@@ -1,10 +1,10 @@
-/* Backbone style execution */
 var bridges = new Map({
     scope: 'usa',
     el: $('#bridges'),
     geography_config: { 
-        highlightBorderColor: '#111',
+        highlightBorderColor: '#ddd',
         highlightBorderWidth: '1',
+        highlightFillColor: '#fff',
         highlightOnHover: true,
         popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.bridges %></strong> bridges<br /><strong><%= data.percentDeficientObsoleteBridges %>%</strong> in poor condition')
     },
