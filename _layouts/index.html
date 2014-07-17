@@ -1,138 +1,142 @@
 {%include header.html %}
 
-<div class="intro">
-  <div class="container">
-    <div class="row">
-      <p>If Congress fails to reauthorize funding to repair our crumbling infrastructure by September 30, it will have very real consequences for all 50 states — jeopardizing hundreds of thousands of jobs, and slowing or stopping more than 100,000 active highway and transit projects.</p>
-    </div>
-  </div>
-</div>
-
 <div class="container container--map">
-  <div class="row">
-    <hgroup>
-      <h4>Estimated Jobs at Risk</h4>
-      <h5>At the high end, California can potentially lose an estimated 73,572 jobs. While New Hampshire can potentially lose 2,675.</h5>
-    </hgroup>
+  <div class="row group">
+    <div class="data">
+      <hgroup>
+        <h3>Jobs</h3>
+        <h4>Estimated Jobs at Risk</h4>
+        <h5>At the high end, California can potentially lose an estimated 73,572 jobs. While New Hampshire can potentially lose 2,675.</h5>
+      </hgroup>
+      <div class="legend">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><span style="display: block; background: rgba(46, 204, 64, .25);width: 20px; height: 20px;"></span></td>
+              <td>Less than 6,000</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(46, 204, 64, .5);width: 20px; height: 20px;"></span></td>
+              <td>6,000 - 10,000</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(46, 204, 64, .75);width: 20px; height: 20px;"></span></td>
+              <td>10,000 - 14,000</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(46, 204, 64, 1);width: 20px; height: 20px;"></span></td>
+              <td>More than 14,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <div class="map" id="jobs"></div>
-    <div class="legend">
-      <table class="table">
-        <tbody>
-          <tr>
-            <td><span style="display: block; background: rgba(46, 204, 64, .25);width: 20px; height: 20px;"></span></td>
-            <td>Less than 6,000</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(46, 204, 64, .5);width: 20px; height: 20px;"></span></td>
-            <td>6,000 - 10,000</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(46, 204, 64, .75);width: 20px; height: 20px;"></span></td>
-            <td>10,000 - 14,000</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(46, 204, 64, 1);width: 20px; height: 20px;"></span></td>
-            <td>More than 14,000</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 </div>
 
 <div class="container container--map">
-  <div class="row">
-    <hgroup>
-      <h4>Acitve Highway Projects</h4>
-      <h5>Virginia has 6595 active highway projects.</h5>
-    </hgroup>
+  <div class="row group">
+    <div class="data">
+      <hgroup>
+        <h3>Projects</h3>
+        <h4>Active Highway Projects</h4>
+        <h5>Virginia has 6595 active highway projects. On the low end Nevada has 381.</h5>
+      </hgroup>
+      <div class="legend">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><span style="display: block; background: rgba(0, 116, 217, .25);width: 20px; height: 20px;"></span></td>
+              <td>Less than 1,000</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(0, 116, 217, .5);width: 20px; height: 20px;"></span></td>
+              <td>1,000 - 2,000</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(0, 116, 217, .75);width: 20px; height: 20px;"></span></td>
+              <td>2,000 - 3,000</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(0, 116, 217, 1);width: 20px; height: 20px;"></span></td>
+              <td>More than 3,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <div class="map" id="projects"></div>
-    <div class="legend">
-      <table class="table">
-        <tbody>
-          <tr>
-            <td><span style="display: block; background: rgba(255, 133, 27, .25);width: 20px; height: 20px;"></span></td>
-            <td>Less than 1,000</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(255, 133, 27, .5);width: 20px; height: 20px;"></span></td>
-            <td>1,000 - 2,000</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(255, 133, 27, .75);width: 20px; height: 20px;"></span></td>
-            <td>2,000 - 3,000</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(255, 133, 27, 1);width: 20px; height: 20px;"></span></td>
-            <td>More than 3,000</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 </div>
 
 <div class="container container--map">
-  <div class="row">
-    <hgroup>
-      <h4>Roads in Poor Condition</h4>
-      <h5>Both Connecticut and Rhode Island have 41% of roads listed in poor condition.</h5>
-    </hgroup>
+  <div class="row group">
+    <div class="data">
+      <hgroup>
+        <h3>Roads</h3>
+        <h4>Roads in Poor Condition</h4>
+        <h5>Both Connecticut and Rhode Island have 41% of roads listed in poor condition. Missouri has only 1% in poor condition.</h5>
+      </hgroup>
+      <div class="legend">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><span style="display: block; background: rgba(255, 255, 255, .25);width: 20px; height: 20px;"></span></td>
+              <td>Less than 20%</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(255, 255, 255, .5);width: 20px; height: 20px;"></span></td>
+              <td>20% - 25%</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(255, 255, 255, .75);width: 20px; height: 20px;"></span></td>
+              <td>26% - 32%</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(255, 255, 255, 1);width: 20px; height: 20px;"></span></td>
+              <td>More than 32%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <div class="map" id="roads"></div>
-    <div class="legend">
-      <table class="table">
-        <tbody>
-          <tr>
-            <td><span style="display: block; background: rgba(0, 116, 217, .25);width: 20px; height: 20px;"></span></td>
-            <td>Less than 20%</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(0, 116, 217, .5);width: 20px; height: 20px;"></span></td>
-            <td>20% - 25%</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(0, 116, 217, .75);width: 20px; height: 20px;"></span></td>
-            <td>26% - 32%</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(0, 116, 217, 1);width: 20px; height: 20px;"></span></td>
-            <td>More than 32%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 </div>
 
 <div class="container container--map">
-  <div class="row"> 
-    <hgroup>
-      <h4 class="bridges">Deficient or Obsolete Bridges</h4>
-      <h5>Rhode Island has 57% of bridges listed as deficient or obsolete.</h5>
-    </hgroup>
-    <div class="map" id="bridges"></div>
-    <div class="legend">
-      <table class="table">
-        <tbody>
-          <tr>
-            <td><span style="display: block; background: rgba(255, 65, 54, .25);width: 20px; height: 20px;"></span></td>
-            <td>Less than 20%</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(255, 65, 54, .5);width: 20px; height: 20px;"></span></td>
-            <td>20% - 25%</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(255, 65, 54, .75);width: 20px; height: 20px;"></span></td>
-            <td>26% - 32%</td>
-          </tr>
-          <tr>
-            <td><span style="display: block; background: rgba(255, 65, 54, 1);width: 20px; height: 20px;"></span></td>
-            <td>More than 32%</td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="row group">
+    <div class="data"> 
+      <hgroup>
+        <h3>Bridges</h3>
+        <h4>Deficient or Obsolete Bridges</h4>
+        <h5>Rhode Island has 57% of bridges listed as deficient or obsolete. Both Minnesota and Arizona have 12%.</h5>
+      </hgroup>
+      <div class="legend">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><span style="display: block; background: rgba(255, 65, 54, .25);width: 20px; height: 20px;"></span></td>
+              <td>Less than 20%</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(255, 65, 54, .5);width: 20px; height: 20px;"></span></td>
+              <td>20% - 25%</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(255, 65, 54, .75);width: 20px; height: 20px;"></span></td>
+              <td>26% - 32%</td>
+            </tr>
+            <tr>
+              <td><span style="display: block; background: rgba(255, 65, 54, 1);width: 20px; height: 20px;"></span></td>
+              <td>More than 32%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+    <div class="map" id="bridges"></div>
   </div>
 </div>
        

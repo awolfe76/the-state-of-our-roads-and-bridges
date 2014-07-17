@@ -2,19 +2,19 @@ var projects = new Map({
     scope: 'usa',
     el: $('#projects'),
     geography_config: { 
-        borderColor: '#f5f5f5',
-        highlightBorderColor: '#f5f5f5',
+        borderColor: '#111',
+        highlightBorderColor: '#111',
         highlightBorderWidth: '1',
-        highlightFillColor: '#111',
+        highlightFillColor: '#fff',
         highlightOnHover: true,
         popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.activeHighwayProjects %></strong> projects')
     },
 
     fills: {
-        'BEST': 'rgba(255, 133, 27, .25)',
-        'BETTER': 'rgba(255, 133, 27, .5)',
-        'WORSE': 'rgba(255, 133, 27, .75)',
-        'WORST': 'rgba(255, 133, 27, 1)',
+        'BEST': 'rgba(0, 116, 217, .25)',
+        'BETTER': 'rgba(0, 116, 217, .5)',
+        'WORSE': 'rgba(0, 116, 217, .75)',
+        'WORST': 'rgba(0, 116, 217, 1)',
         defaultFill: '#dddddd'
     },
       data: {

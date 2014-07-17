@@ -11,10 +11,11 @@ html {
   height: 100%;
 }
 body {
+  background: #fff;
   color: #373A41;
   font: 400 16px/1.45 "Source Sans Pro", Helvetica, Calibri, Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 section,
@@ -34,14 +35,14 @@ img {
 }
 
 a:link {
-  color: #55A3CA;
+  color: #0074d9;
   text-decoration: none;
 }
 a:visited {
-  color:#6824E5;
+  color:#b10dc9;
 }
 a:hover {
-  color:#E53724 /* #E7A024*/;
+  color:#ff4136;
   text-decoration: underline;
 }
 
@@ -67,8 +68,11 @@ h2 {
   font-size: 30px;
 }
 h3 {
-  font-size: 24px;
-  margin-top: 10px;
+  color: #444;
+  font-size: 18px;
+  line-height: 1;
+  margin-top: 0;
+  text-transform: uppercase;
 }
 h4 {
   color: #fff;
@@ -112,6 +116,7 @@ hr {
 }
 .container--map {
   background: #111;
+  border-bottom: 10px solid #fff;
   padding: 20px 0;
 }
 @media (min-width: 601px) {
@@ -119,27 +124,12 @@ hr {
     padding: 50px;
   }
 }
-.container--map:nth-child(2n+2) {
-  background: #f5f5f5;
-}
-.container--map:nth-child(2n+2) h4 {
-  color: #111;
-}
-.container--map:nth-child(2n+2) h5 {
-  color: #444;
-}
-.container--map:nth-child(2n+2) .table {
-  color: #444;
-}
-.container--map:nth-child(2n+2) .table > tbody > tr > td {
-  border-top-color: #ccc;
-}
 .row {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
   position: relative;
   width: 100%;
-  max-width: 850px;
+  max-width: 1000px;
 }
 
 header {
@@ -211,9 +201,10 @@ header h3 span {
   }
 }
 
-.intro, footer {
-  background: #fff;
-  color: #111;
+.intro {
+  background: #ff4136;
+  border-bottom: 10px solid #fff;
+  color: #fff;
   padding: 20px 0;
 }
 .intro p, footer p {
@@ -230,49 +221,34 @@ header h3 span {
   }
 }
 
+.data {
+  float: left;
+  width: 35%;
+}
+.legend {
+  color: #ccc;
+  margin: 30px 0 0;
+  position: relative;
+  width: 180px;
+}
 .map {
+  float: left;
   height: 200px;
-  margin: 0 auto;
-  width: 100%;
+  margin-left: 5%;
+  width: 60%;
 }
 @media (min-width: 601px) {
   .map {
     height: 400px;
   }
 }
-@media (min-width: 901px){
-  .map {
-    height: 500px;
-  }
-}
 
-.legend {
-  color: #ccc;
-  margin: 0 auto;
-  position: relative;
-  width: 180px;
+footer {
+  background: #f5f5f5;
+  color: #111;
+  margin-bottom: 10px;
+  padding: 20px 0;
 }
-@media (min-width: 910px) {
-  .legend {
-    bottom: 75px;
-    margin-bottom: 0;
-    padding: 10px;
-    position: absolute;
-    right: 0;
-  }
-}
-caption {
-  font-size: 14px;
-  line-height: 1.3;
-  margin-bottom: 20px;
-  text-align: left;
-}
-@media (min-width: 1100px) {
-  caption {
-    font-size: 16px;
-  }
-}
-
 
 table {
   border-spacing: 0;

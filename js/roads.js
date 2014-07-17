@@ -9,12 +9,12 @@ var roads = new Map({
         highlightOnHover: true,
         popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.milesPublicRoad %></strong> miles of roads<br /><strong><%= data.percentRoadsPoorCondition %>%</strong> in poor condition')
     },
-    
+
     fills: {
-        'BEST': 'rgba(0, 116, 217, .25)',
-        'BETTER': 'rgba(0, 116, 217, .5)',
-        'WORSE': 'rgba(0, 116, 217, .75)',
-        'WORST': 'rgba(0, 116, 217, 1)',
+        'BEST': 'rgba(255, 255, 255, .25)',
+        'BETTER': 'rgba(255, 255, 255, .5)',
+        'WORSE': 'rgba(255, 255, 255, .75)',
+        'WORST': 'rgba(255, 255, 255, 1)',
         defaultFill: '#dddddd'
     },
       data: {
