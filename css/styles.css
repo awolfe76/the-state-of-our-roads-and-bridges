@@ -69,21 +69,26 @@ h2 {
 }
 h3 {
   color: #444;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1;
   margin-top: 0;
   text-transform: uppercase;
 }
+@media (min-width: 801px) {
+  h4 {
+    font-size: 18px;
+  }
+}
 h4 {
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1;
   margin-bottom: 5px;
   margin-top: 0;
   text-transform: uppercase;
 }
-@media (min-width: 601px) {
+@media (min-width: 901px) {
   h4 {
     font-size: 48px;
   }
@@ -94,7 +99,7 @@ h5 {
   font-weight: 400;
   margin-top: 0;
 }
-@media (min-width: 601px) {
+@media (min-width: 901px) {
   h5 {
     font-size: 24px;
   }
@@ -117,9 +122,9 @@ hr {
 .container--map {
   background: #111;
   border-bottom: 10px solid #fff;
-  padding: 20px 0;
+  padding: 20px;
 }
-@media (min-width: 601px) {
+@media (min-width: 999px) {
   .container--map {
     padding: 50px;
   }
@@ -161,7 +166,7 @@ header h1 span {
 header h3 {
   color: #fff;
   font-family: "Lora";
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   margin-top: 40px;
   text-transform: capitalize;
@@ -205,41 +210,65 @@ header h3 span {
   background: #ff4136;
   border-bottom: 10px solid #fff;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px;
 }
 .intro p, footer p {
   font-size: 16px;
   margin: 0;
 }
-@media (min-width: 601px) {
+@media (min-width: 999px) {
   .intro, footer {
     padding-bottom: 50px;
     padding-top: 50px;
   }
+}
+@media (min-width: 601px) {
   .intro p {
     font-size: 24px;
   }
 }
 
 .data {
-  float: left;
-  width: 35%;
+
+}
+.map {
+  height: 150px;
+}
+@media (min-width: 401px) {
+  .map {
+    height: 200px;
+  }
+}
+@media (min-width: 501px) {
+  .map {
+    height: 300px;
+  }
+}
+@media (min-width: 601px) {
+  .data {
+    float: left;
+    width: 35%;
+  }
+  .map {
+    float: left;
+    margin-left: 5%;
+    width: 60%;
+  }
+}
+@media (min-width: 801px) {
+  .map {
+    height: 400px;
+  }
 }
 .legend {
   color: #ccc;
-  margin: 30px 0 0;
+  margin: 20px auto;
   position: relative;
   width: 180px;
 }
-.map {
-  float: left;
-  height: 200px;
-  margin-left: 5%;
-  width: 60%;
-}
 @media (min-width: 601px) {
-  .map {
-    height: 400px;
+  .legend {
+    margin: 30px 0 0;
   }
 }
 
@@ -247,7 +276,7 @@ footer {
   background: #f5f5f5;
   color: #111;
   margin-bottom: 10px;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 table {
