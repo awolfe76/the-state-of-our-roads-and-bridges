@@ -2,7 +2,8 @@ var jobs = new Map({
     scope: 'usa',
     el: $('#jobs'),
     geography_config: { 
-        highlightBorderColor: '#ddd',
+        borderColor: '#111',
+        highlightBorderColor: '#111',
         highlightBorderWidth: '1',
         highlightFillColor: '#fff',
         highlightOnHover: true,
@@ -10,9 +11,9 @@ var jobs = new Map({
     },
 
     fills: {
-        'BEST': 'rgba(46, 204, 64, .25)',
-        'BETTER': 'rgba(46, 204, 64, .5)',
-        'WORSE': 'rgba(46, 204, 64, .75)',
+        'BEST': 'rgba(46, 204, 64, .4)',
+        'BETTER': 'rgba(46, 204, 64, .6)',
+        'WORSE': 'rgba(46, 204, 64, .8)',
         'WORST': 'rgba(46, 204, 64, 1)',
         defaultFill: '#dddddd'
     },

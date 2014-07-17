@@ -1,14 +1,15 @@
 var roads = new Map({
     scope: 'usa',
     el: $('#roads'),
-    geography_config: { 
-        highlightBorderColor: '#ddd',
+    geography_config: {
+        borderColor: '#111',
+        highlightBorderColor: '#111',
         highlightBorderWidth: '1',
         highlightFillColor: '#fff',
         highlightOnHover: true,
         popupTemplate: _.template('<div class="hoverinfo"><strong><%= geography.properties.name %></strong><hr/><strong><%= data.milesPublicRoad %></strong> miles of roads<br /><strong><%= data.percentRoadsPoorCondition %>%</strong> in poor condition')
     },
-
+    
     fills: {
         'BEST': 'rgba(0, 116, 217, .25)',
         'BETTER': 'rgba(0, 116, 217, .5)',
