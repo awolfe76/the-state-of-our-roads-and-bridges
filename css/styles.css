@@ -51,9 +51,11 @@ p {
   margin: 0 0 20px 0;
 }
 blockquote {
+  border-bottom: 1px solid #ddd;
   color: #555;
   font-style: italic;
   margin: 25px auto;
+  padding-bottom: 25px;
   max-width: 300px;
 }
 .content blockquote p {
@@ -75,6 +77,7 @@ blockquote img {
 }
 @media (min-width: 700px) {
   blockquote {
+    border-bottom: none;
     border-left: 1px solid #ddd;
     float: right;
     margin: 0 0 25px 50px;
