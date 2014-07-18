@@ -52,24 +52,33 @@ p {
 }
 blockquote {
   color: #555;
-  font-size: 24px;
   font-style: italic;
+  margin: 25px auto;
   max-width: 300px;
 }
+.content blockquote p {
+  font-size: 18px;
+}
 blockquote cite {
-  color: #777;
   font-size: 14px;
   margin-top: 5px;
 }
-@media (min-width: 481px) {
-  blockquote {
-    float: right;
-    margin: 25px 0 25px 50px;
-  }
+blockquote cite strong {
+  font-size: 16px;
+  font-style: normal;
 }
-@media (min-width: 999px) {
+blockquote img {
+  border-radius: 2px;
+  display: block;
+  margin-bottom: 5px;
+  width: 60px;
+}
+@media (min-width: 700px) {
   blockquote {
-    max-width: 450px;
+    border-left: 1px solid #ddd;
+    float: right;
+    margin: 0 0 25px 50px;
+    padding-left: 25px;
   }
 }
 h1,
