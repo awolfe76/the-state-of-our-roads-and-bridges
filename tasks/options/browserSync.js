@@ -15,7 +15,13 @@ module.exports = {
     port: 4000,
     server: {
       baseDir: '_site',
-      directory: true
+      directory: true,
+      /*middleware: [
+        function (req, res, next) {
+          console.log("from middleware 1" + res);
+          next();
+        }
+      ]*/
     },
     notify: false,
   }
